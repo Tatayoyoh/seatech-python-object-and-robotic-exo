@@ -1,6 +1,6 @@
 # EXO 1
 
-## Exigences client
+## Exigences
 
 * Lorsque je crée mon robot, je veux pouvoir lui attribuer un nom
 * Mon robot doit pouvoir s'allumer
