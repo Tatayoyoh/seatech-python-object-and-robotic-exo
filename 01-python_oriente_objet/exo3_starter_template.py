@@ -2,35 +2,35 @@ from abc import ABCMeta, abstractmethod
 
 """ You can use classes below or create your own 👍️"""
 
-class UnmannedVehicule():
+class UnmannedVehicle():
     """ 
         An autonomous vehicle have to do his mission automatically.
         This mission can be configured by an operator.
     """
     pass
 
-class AerialVehicule():
+class AerialVehicle():
     """ A vehicle made for ground fields."""
     pass
 
-class GroundVehicule():
+class GroundVehicle():
     """ A vehicle made for ground fields."""
     pass
 
-class UnderseaVehicule():
+class UnderseaVehicle():
     """ A vehicle made for ground fields."""
     pass
 
 class UAV():
-    """Unmanned Aerial Vehicule"""
+    """Unmanned Aerial Vehicle"""
     pass
 
 class UUV():
-    """Unmanned Undersea Vehicule"""
+    """Unmanned Undersea Vehicle"""
     pass
 
 class UGV():
-    """Unmanned Ground Vehicule"""
+    """Unmanned Ground Vehicle"""
     pass
 
 
