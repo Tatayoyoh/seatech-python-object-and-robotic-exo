@@ -2,22 +2,22 @@ from abc import ABCMeta, abstractmethod
 
 """ You can use classes below or create your own 👍️"""
 
-class UnmannedVehicle():
+class UnmannedVehicle(classmeta=ABCMeta):
     """ 
         An autonomous vehicle have to do his mission automatically.
         This mission can be configured by an operator.
     """
     pass
 
-class AerialVehicle():
+class AerialVehicle(classmeta=ABCMeta):
     """ A vehicle made for ground fields."""
     pass
 
-class GroundVehicle():
+class GroundVehicle(classmeta=ABCMeta):
     """ A vehicle made for ground fields."""
     pass
 
-class UnderseaVehicle():
+class UnderseaVehicle(classmeta=ABCMeta):
     """ A vehicle made for ground fields."""
     pass
 
