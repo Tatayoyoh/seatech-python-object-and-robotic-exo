@@ -22,3 +22,5 @@ cyborg.status()
 cyborg.eat('banana')
 cyborg.eat(['coca', 'chips'])
 cyborg.digest()
+
+# cyborg.truc_fun()
