@@ -34,15 +34,16 @@ class UGV():
     pass
 
 
-uav = UAV()
-uav.do_something_interesting()
-uav.do_something_aerial_specific()
+if __name__ == '__main__':
+    uav = UAV()
+    uav.do_something_interesting()
+    uav.do_something_aerial_specific()
 
-ugv = UGV()
-ugv.do_something_interesting()
-ugv.do_something_ground_specific()
+    ugv = UGV()
+    ugv.do_something_interesting()
+    ugv.do_something_ground_specific()
 
-uuv = UUV()
-uuv.do_something_interesting()
-uuv.do_something_undersea_specific()
+    uuv = UUV()
+    uuv.do_something_interesting()
+    uuv.do_something_undersea_specific()
 

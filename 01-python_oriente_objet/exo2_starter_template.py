@@ -13,6 +13,7 @@ class Cyborg(Robot, Human):
         Human.__init__(self, sexe)
 
 
+
 cyborg = Cyborg('Deux Ex Machina', 'M')
 
 print(cyborg.name, 'sexe', cyborg.sexe)
