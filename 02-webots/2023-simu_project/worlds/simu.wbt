@@ -1,0 +1,68 @@
+#VRML_SIM R2023a utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
+EXTERNPROTO "../protos/CircleArena.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/appearances/protos/MattePaint.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/toys/protos/RubberDuck.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/solids/protos/SolidBox.proto"
+
+WorldInfo {
+}
+Viewpoint {
+  orientation 0.01242755012481483 -0.0037074090179300646 -0.9999159020218995 2.916557645394538
+  position 17.016297751802107 3.6660200191054813 3.484081332801078
+}
+TexturedBackground {
+  texture "noon_stormy_empty"
+}
+TexturedBackgroundLight {
+  luminosity 1.5
+}
+RubberDuck {
+  translation 3.71726 3.73801 2.12832
+  rotation 0.019577156574886557 -0.006656030729151914 -0.9997861932410222 -0.7168146928204138
+  name "duck1"
+  scale 7
+}
+RubberDuck {
+  translation -3.74462 -3.69422 2.12832
+  rotation 0.019577156574886557 -0.006656030729151914 -0.9997861932410222 2.2168146928204138
+  name "duck3"
+  scale 7
+  bodyColor 0.878431 0.105882 0.141176
+}
+RubberDuck {
+  translation -3.72741 3.74949 2.12832
+  rotation -0.007930910549064418 0.018191301259400945 0.9998030692173095 2.40279
+  name "duck4"
+  scale 7
+  bodyColor 0.878431 0.105882 0.141176
+}
+RubberDuck {
+  translation 3.73045 -3.69629 2.12832
+  rotation 0.019577156574886557 -0.006656030729151914 -0.9997861932410222 0.7831853071795862
+  name "duck2"
+  scale 7
+  bodyColor 0.180392 0.760784 0.494118
+}
+CircleArena {
+  name "defeat arena"
+  radius 8
+  floorAppearance MattePaint {
+    baseColor 0.300008 0.0119936 0.0119936
+  }
+}
+SolidBox {
+  translation 0 0 2
+  rotation 0.707084957913509 0.707084957913509 0.007856499532372323 0
+  name "arena"
+  size 8 8 0.1
+  appearance PBRAppearance {
+    baseColor 0 0 0
+    baseColorMap ImageTexture {
+    }
+    roughness 0.5
+    metalness 0
+  }
+}
