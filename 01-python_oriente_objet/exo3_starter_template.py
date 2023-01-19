@@ -1,37 +1,30 @@
 from abc import ABCMeta, abstractmethod
 
-""" You can use classes below or create your own 👍️"""
+# You can use classes below or create your own 👍️
 
-class UnmannedVehicle(classmeta=ABCMeta):
+class UnmannedVehicle(metaclass=ABCMeta):
     """ 
         An autonomous vehicle have to do his mission automatically.
         This mission can be configured by an operator.
     """
-    pass
 
-class AerialVehicle(classmeta=ABCMeta):
+class AerialVehicle(metaclass=ABCMeta):
     """ A vehicle made for ground fields."""
-    pass
 
-class GroundVehicle(classmeta=ABCMeta):
+class GroundVehicle(metaclass=ABCMeta):
     """ A vehicle made for ground fields."""
-    pass
 
-class UnderseaVehicle(classmeta=ABCMeta):
+class UnderseaVehicle(metaclass=ABCMeta):
     """ A vehicle made for ground fields."""
-    pass
 
 class UAV():
     """Unmanned Aerial Vehicle"""
-    pass
 
 class UUV():
     """Unmanned Undersea Vehicle"""
-    pass
 
 class UGV():
     """Unmanned Ground Vehicle"""
-    pass
 
 
 if __name__ == '__main__':

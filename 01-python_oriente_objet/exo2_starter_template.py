@@ -1,10 +1,8 @@
 class Robot():
-    # Robot class content here
-    pass
+    """ Robot class content here"""
 
 class Human():   
-    # Human class content here
-    pass
+    """Human class content here"""
 
 class Cyborg(Robot, Human):   
 
