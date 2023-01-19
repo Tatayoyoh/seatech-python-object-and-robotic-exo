@@ -1,0 +1,42 @@
+#VRML_SIM R2023a utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/robots/gctronic/e-puck/protos/E-puck.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/floors/protos/RectangleArena.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/appearances/protos/GlossyPaint.proto"
+IMPORTABLE EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/robots/sony/aibo/protos/AiboErs7.proto"
+
+WorldInfo {
+}
+Viewpoint {
+  orientation -0.1395774597105282 0.07174228061174373 0.9876088182642871 2.202151511634666
+  position 1.1536403603206908 -1.7746369095127938 0.8396863324967332
+}
+TexturedBackground {
+  texture "dusk"
+}
+TexturedBackgroundLight {
+  luminosity 2
+}
+RectangleArena {
+  floorSize 2 2
+  floorAppearance GlossyPaint {
+  }
+  wallAppearance NULL
+}
+E-puck {
+  hidden position_0_0 29.492080975401045
+  hidden position_0_1 32.3967142244621
+  hidden linearVelocity_0 -8.634721814547004e-05 -0.00014007111422982115 7.231476964016929e-09
+  hidden angularVelocity_0 0.009338043702631194 -0.005756462358617015 4.340449641130718e-12
+  hidden rotation_1 0 0.9999999999999999 0 4.359339746682699
+  hidden linearVelocity_1 -0.00011512925215761971 -0.0001867608821257931 -2.2935386932362482e-11
+  hidden angularVelocity_1 0.009338043702890337 -0.005756462359061874 -1.6606095859564445e-10
+  hidden rotation_2 0 -1 0 5.302397618615418
+  hidden linearVelocity_2 -0.00011512925205926692 -0.00018676088197452253 -2.2851542870365533e-11
+  hidden angularVelocity_2 0.009338043702731556 -0.005756462359153751 1.747457015609746e-10
+  translation 0.5158011166599482 0.2880978717664251 -6.396162493559412e-05
+  rotation 0.00018866655431831305 -0.00033793760588030417 0.9999999251015501 1.0183670641505274
+  controller "seatech_controller"
+}
