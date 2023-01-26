@@ -1,4 +1,4 @@
-# 2023 Simu project : Super Smash Bot Melle
+# 2023 Simu project : Super Smash Bot Meele
 
 ## Régles du challenge
 
