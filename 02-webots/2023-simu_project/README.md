@@ -11,7 +11,7 @@
 
 ## Installation 
 
-Exécuter le script suivant pour avoir la complétion des biblioth_qèes `Webots` dans `VS Code`
+Exécuter le script suivant pour avoir la complétion des bibliothèques `Webots` dans `VS Code`
 
 ```bash
 cd seatech-python-object-and-robotic-exo/02-webots
