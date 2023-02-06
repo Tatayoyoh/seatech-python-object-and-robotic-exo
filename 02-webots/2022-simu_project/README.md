@@ -14,5 +14,5 @@ Execute the script below to have `Webots` code auto completion feature enabled i
 
 ```bash
 cd seatech-python-object-and-robotic-exo/02-webots
-./setup_webots_environment.sh
+source ./setup_webots_environment.sh
 ```

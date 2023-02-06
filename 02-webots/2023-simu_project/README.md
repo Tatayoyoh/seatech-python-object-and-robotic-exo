@@ -15,5 +15,5 @@ Exécuter le script suivant pour avoir la complétion des bibliothèques `Webots
 
 ```bash
 cd seatech-python-object-and-robotic-exo/02-webots
-./setup_webots_environment.sh
+source ./setup_webots_environment.sh
 ```
