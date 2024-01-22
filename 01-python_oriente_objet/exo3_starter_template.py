@@ -9,13 +9,13 @@ class UnmannedVehicle(metaclass=ABCMeta):
     """
 
 class AerialVehicle(metaclass=ABCMeta):
-    """ A vehicle made for ground fields."""
+    """ A vehicle made for ground aerial areas."""
 
 class GroundVehicle(metaclass=ABCMeta):
     """ A vehicle made for ground fields."""
 
 class UnderseaVehicle(metaclass=ABCMeta):
-    """ A vehicle made for ground fields."""
+    """ A vehicle made for underwater seas."""
 
 class UAV():
     """Unmanned Aerial Vehicle"""
