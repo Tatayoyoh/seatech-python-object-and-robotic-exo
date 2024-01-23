@@ -2,12 +2,13 @@
 
 ## Exigences
 
+* En tant que client, je veux pouvoir jouer avec trois types de Véhicules différents : UUV, UAV, UGV
+* Seul les Véhicules finaux doivent être utilisables
+* Un Véhicules Unmanned doit exécuter une mission
 * Mettre en avant un principe de classe abstraite
 * Mettre en avant un principe de polymorphisme
 * Mettre en avant un principe d'héritage multiple
-* Max 3 méthodes par classe (hors getter/setter)
 * Pas d'algorithmes complexes, juste des print ;)
-* En tant que client, je veux pouvoir jouer avec trois types/dérivés de robots différents
 
 ### Aide
 
