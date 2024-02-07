@@ -1,19 +1,22 @@
-#VRML_SIM R2023b utf8
+#VRML_SIM R2023a utf8
 
 EXTERNPROTO "../protos/TexturedBackground.proto"
 EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
 EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/floors/protos/RectangleArena.proto"
 EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/appearances/protos/Parquetry.proto"
 EXTERNPROTO "../protos/Road.proto"
-EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/road/protos/RoadLine.proto"
+EXTERNPROTO "../protos/RoadLine.proto"
 EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/solids/protos/SolidRoundedBox.proto"
-EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/solids/protos/SolidPipe.proto"
+EXTERNPROTO "../protos/SolidPipe1.proto"
+EXTERNPROTO "../protos/SolidPipe2.proto"
+EXTERNPROTO "../protos/SolidPipe3.proto"
+EXTERNPROTO "../protos/SolidPipe4.proto"
 
 WorldInfo {
 }
 Viewpoint {
-  orientation 0.1865324782408456 -0.23070168357623763 -0.9549776791927747 4.878063246539462
-  position -51.86906271364613 -111.3991010655149 56.02193046035591
+  orientation -0.18038683434613662 -0.677902045267542 0.7126776319042593 5.568511189303475
+  position -130.42431371830304 88.91840655378186 51.979282480997206
 }
 TexturedBackground {
   texture "twilight_cloudy_empty"
@@ -52,28 +55,53 @@ RectangleArena {
   wallThickness 0.5
   wallHeight 1
 }
-SolidPipe {
+SolidPipe1 {
   translation -74.1397 75.406 2
   rotation 1 0 0 -1.5707953071795862
+  name "pipe4"
   height 12
+  appearance PBRAppearance {
+    baseColor 1 1 0
+    transparency 0.5
+    roughness 0.5
+    metalness 0
+  }
 }
-SolidPipe {
+SolidPipe2 {
   translation -60.6807 69.4101 7
   rotation 1 0 0 -1.5707953071795862
-  name "pipe(1)"
+  name "pipe2"
   height 5
+  appearance PBRAppearance {
+    baseColor 0 1 1
+    transparency 0.5
+    roughness 0.5
+    metalness 0
+  }
 }
-SolidPipe {
+SolidPipe3 {
   translation -53.934 76.2414 4
   rotation -0.8768880072093348 -0.33990200279450433 0.3399030027945126 1.7018
-  name "pipe(3)"
+  name "pipe1"
   height 8
+  appearance PBRAppearance {
+    baseColor 1 0 1
+    transparency 0.5
+    roughness 0.5
+    metalness 0
+  }
 }
-SolidPipe {
+SolidPipe4 {
   translation -68.7366 59.6817 10
   rotation -0.5697930319719425 0.5810920326059464 -0.5810920326059464 2.10577
-  name "pipe(2)"
+  name "pipe3"
   height 5
+  appearance PBRAppearance {
+    baseColor 0 1 0
+    transparency 0.5
+    roughness 0.5
+    metalness 0
+  }
 }
 SolidRoundedBox {
   translation -14.8371 31.6911 2
