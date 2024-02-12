@@ -13,7 +13,7 @@
 EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/road/protos/RoadLine.proto"
 EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/appearances/protos/Asphalt.proto"
 EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/appearances/protos/Pavement.proto"
-EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/road/protos/CrashBarrier.proto"
+EXTERNPROTO "CrashBarrier.proto"
 
 PROTO Road [
   field        SFVec3f              translation               0 0 0
@@ -473,7 +473,7 @@ PROTO Road [
                 }
               ]
               name "road line(%<= j - 1 >%)"
-              recognitionColors [ 0 1 0 ]
+              #recognitionColors [ 0 1 0 ]
               model "road line"
             }
           %< } >%
