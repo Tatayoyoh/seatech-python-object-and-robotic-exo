@@ -1,27 +1,33 @@
-#VRML_SIM R2023a utf8
+#VRML_SIM R2023b utf8
 
-EXTERNPROTO "../protos/TexturedBackground.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/backgrounds/protos/TexturedBackground.proto"
 EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
 EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/floors/protos/RectangleArena.proto"
 EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/appearances/protos/Parquetry.proto"
-EXTERNPROTO "../protos/Road.proto"
+EXTERNPROTO "../protos/RoadRecognition.proto"
 EXTERNPROTO "../protos/RoadLine.proto"
-EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/solids/protos/SolidRoundedBox.proto"
+EXTERNPROTO "../protos/SolidRoundedBox.proto"
 EXTERNPROTO "../protos/SolidPipe1.proto"
 EXTERNPROTO "../protos/SolidPipe2.proto"
 EXTERNPROTO "../protos/SolidPipe3.proto"
 EXTERNPROTO "../protos/SolidPipe4.proto"
+EXTERNPROTO "../protos/SummitXlSteel.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/appearances/protos/Asphalt.proto"
+EXTERNPROTO "../protos/Road.proto"
 
 WorldInfo {
 }
 Viewpoint {
-  orientation -0.18038683434613662 -0.677902045267542 0.7126776319042593 5.568511189303475
-  position -130.42431371830304 88.91840655378186 51.979282480997206
+  orientation -0.07552496770315718 0.984991018688099 0.15520525879369487 0.9177551638564349
+  position -29.740954278700375 8.213776364570295 33.33324611163993
+}
+TexturedBackgroundLight {
 }
 TexturedBackground {
   texture "twilight_cloudy_empty"
-}
-TexturedBackgroundLight {
+  skyColor [
+    0 0 1
+  ]
 }
 RectangleArena {
   translation 1.35639 0.411838 0
@@ -32,6 +38,35 @@ RectangleArena {
   }
   wallThickness 0.5
   wallHeight 1
+}
+SummitXlSteel {
+  hidden position_0_0 73.02955003422817
+  hidden position_0_1 72.20202433730299
+  hidden position_0_2 71.44684967217826
+  hidden position_0_3 71.7074893724084
+  hidden translation_7 0.22027614017529215 -0.20449996661010172 -0.0022812461636827915
+  hidden rotation_7 0.276518647613266 -0.6795344160451864 0.679536912119024 2.602039467519225
+  hidden translation_8 0.2226746089094819 0.20450003337390876 -0.003179329005198444
+  hidden rotation_8 -0.01930761682541638 -0.7069736713968815 0.7069762682609205 3.1802029481437444
+  hidden translation_9 -0.22022717731384583 0.2045000329443426 -0.0021634814587438694
+  hidden rotation_9 -0.29002062309459375 -0.676714368820122 0.6767168545353422 3.706143578521348
+  hidden translation_10 -0.22086056456540068 -0.20449996703966933 -0.0026775888311298605
+  hidden rotation_10 -0.19534466748268267 -0.6934828504904935 0.6934853977998817 3.527421866361029
+  translation 3.3722594903955843 13.271702016591254 0.11027144877677413
+  rotation 0.003060189663963202 -0.004425088948429215 0.9999855268087728 0.17682317401849615
+  controller "my_controller"
+  frontLidarSlot [
+    Camera {
+      translation -0.119706 -0.169705 4.95119e-07
+      rotation 0.9238797538372345 -0.38268289803621075 5.077418647149253e-07 3.14159
+      width 200
+      height 200
+      recognition Recognition {
+        maxRange 1
+        occlusion 0
+      }
+    }
+  ]
 }
 RectangleArena {
   translation -29.7867 36.7686 1.03739e-12
@@ -168,8 +203,42 @@ SolidRoundedBox {
   translation -20.0214 34.6029 1
   name "rounded box(1)"
 }
+#RoadRecognition {
+#  translation -16 -15.5 0.006
+#  name "roadline"
+#  width 0.3
+#  numberOfLanes 1
+#  lines [
+#    RoadLine {
+#      color 0 1 0
+#      type "continuous"
+#    }
+#  ]
+#  roadBorderHeight 0
+#  roadBorderWidth [
+#    0
+#  ]
+#  wayPoints [
+#    0 0 0
+#    10 0 0
+#    10 15 0
+#    10 20 0
+#    17 20 0
+#    17 0 0
+#    23 0 0
+#    28 0 0
+#    35 30 0
+#    10 30 0
+#    0 30 1
+#    0 36 2
+#  ]
+#  appearance Asphalt {
+#    colorOverride 0 1 0
+#  }
+#}
 Road {
-  translation -16 -15.5 0.25
+  translation -16 -15.5 0.006
+  name "mainroad"
   width 2
   lines [
     RoadLine {
@@ -177,7 +246,12 @@ Road {
       type "continuous"
     }
   ]
-  roadBorderHeight 0.4
+  roadBorderHeight 0.5
+  roadBorderWidth [
+    0.1
+  ]
+  rightBarrier TRUE
+  leftBarrier TRUE
   wayPoints [
     0 0 0
     10 0 0
@@ -192,4 +266,7 @@ Road {
     0 30 1
     0 36 2
   ]
+  appearance Asphalt {
+    colorOverride 0 1 0
+  }
 }
