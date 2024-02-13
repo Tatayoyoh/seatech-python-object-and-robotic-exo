@@ -14,6 +14,11 @@ EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/project
 EXTERNPROTO "../protos/Road.proto"
 EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/obstacles/protos/Ramp30deg.proto"
 EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/traffic/protos/PedestrianCrossing.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/toys/protos/RubberDuck.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/traffic/protos/TrafficCone.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/traffic/protos/HighwayPole.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/traffic/protos/HighwaySign.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/road/protos/RoadPillars.proto"
 
 WorldInfo {
   basicTimeStep 20
@@ -94,6 +99,16 @@ RectangleArena {
   }
   wallThickness 0.5
   wallHeight 1
+}
+HighwayPole {
+  translation -46.8007 88.6903 -1.5
+  rotation 0 0 1 -1.5707953071795862
+  rightHorizontalSigns [
+    HighwaySign {
+      translation 0.09 0 0
+      name "vertical sign"
+    }
+  ]
 }
 SolidPipe1 {
   translation -74.1397 75.406 2
@@ -245,4 +260,38 @@ Road {
   rightBorderBoundingObject TRUE
   leftBorderBoundingObject TRUE
 }
+RubberDuck {
+  hidden linearVelocity_0 -0.007607342321741678 0.007853332593901632 0.0005418847493875602
+  hidden angularVelocity_0 -0.030819377331958532 -0.029854020662536382 -8.792093340121487e-12
+  translation -43.70474526351401 31.577400450229355 4.714925356216311
+  rotation 0.00031753576232223895 0.0007496758366064361 -0.9999996685785348 0.8013077095003881
+  scale 14
+}
+RubberDuck {
+  translation 6.755098439179799 -9.710166499024679 0.3780553020313987
+  rotation -0.006131181405725895 -0.0007265320489558412 0.999980940201238 -2.9057014379861825
+  name "rubber duck(1)"
+  scale 30
+}
+TrafficCone {
+  translation -35.0519 49.191 4.41
+  scale 4
+}
+TrafficCone {
+  translation -12.2273 6.83311 -2.84217e-13
+  scale 10
+  name "traffic cone(1)"
+}
+RubberDuck {
+  hidden linearVelocity_0 -0.0010519540114122177 -0.0010124795046141772 0.0012607526763517471
+  hidden angularVelocity_0 0.0005709780765621105 -0.0005995582153387202 1.7481199833191445e-07
+  translation -15.090472091925893 32.98515768321526 4.7306285868461515
+  rotation 0.0005090410677399137 -0.0012573833146112344 0.9999990799317726 0.7674985574887897
+  name "rubber duck(2)"
+  scale 18
+}
+RoadPillars {
+  translation -73.9608 75.7566 -1.5
+  rotation 0 0 1 -1.5707953071795862
+  height 6
 }
