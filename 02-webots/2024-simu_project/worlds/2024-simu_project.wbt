@@ -10,7 +10,6 @@ EXTERNPROTO "../protos/SolidPipe1.proto"
 EXTERNPROTO "../protos/SolidPipe2.proto"
 EXTERNPROTO "../protos/SolidPipe3.proto"
 EXTERNPROTO "../protos/SolidPipe4.proto"
-EXTERNPROTO "../protos/SummitXlSteel.proto"
 EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/appearances/protos/Asphalt.proto"
 EXTERNPROTO "../protos/Road.proto"
 EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/floors/protos/Floor.proto"
@@ -19,13 +18,13 @@ EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/project
 WorldInfo {
 }
 Viewpoint {
-  orientation -0.14356667832304876 -0.8778779944696812 0.456857566098206 5.568255159181525
-  position -119.75103860583131 76.10548323804865 61.126589922183555
+  orientation -0.18329294537227994 0.04346153885371068 0.9820971391961294 2.661644415020583
+  position 73.71797198572104 -30.19906740851543 38.90927884594108
 }
 TexturedBackgroundLight {
 }
 TexturedBackground {
-  texture "twilight_cloudy_empty"
+  texture "noon_park_empty"
   skyColor [
     0 0 1
   ]
@@ -38,10 +37,10 @@ RectangleArena {
     type "light strip"
   }
   wallThickness 0.5
-  wallHeight 0
+  wallHeight 0.5
 }
 Floor {
-  translation -15 22 0.01
+  translation -15 22 0.02
   name "Relay1"
   size 5 5
   appearance Parquetry {
@@ -49,7 +48,7 @@ Floor {
   }
 }
 Floor {
-  translation -45 52 0.01
+  translation -45 52 0.02
   name "Relay2"
   size 5 5
   appearance Parquetry {
@@ -60,24 +59,6 @@ Ramp30deg {
   translation -14.1511 19.1333 3.55271e-15
   rotation 0 0 1 1.8326
 }
-SummitXlSteel {
-  translation -12.2203 14.8895 0.116415
-  rotation -0.0043336699551277304 -0.0017999699813625078 0.9999889896457791 1.971
-  controller "my_controller"
-  frontLidarSlot [
-    Camera {
-      translation -0.119706 -0.169705 4.95119e-07
-      rotation 0.9238797538372345 -0.38268289803621075 5.077418647149253e-07 3.14159
-      name "camerarecognition"
-      width 200
-      height 200
-      recognition Recognition {
-        maxRange 1
-        occlusion 0
-      }
-    }
-  ]
-}
 RectangleArena {
   translation -29.7867 36.7686 1.03739e-12
   name "rectangle arena(1)"
@@ -87,7 +68,7 @@ RectangleArena {
     type "light strip"
   }
   wallThickness 0.5
-  wallHeight 0
+  wallHeight 0.5
 }
 RectangleArena {
   translation -60.5709 69.2032 -1.85
@@ -214,7 +195,7 @@ SolidRoundedBox {
   name "rounded box(1)"
 }
 Road {
-  translation -16 -15.5 0.006
+  translation -16 -15.5 0.01
   name "mainroad"
   width 2
   lines [
