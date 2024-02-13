@@ -206,7 +206,7 @@ Road {
   ]
   roadBorderHeight 0.5
   roadBorderWidth [
-    0.1
+    0.6
   ]
   rightBarrier TRUE
   leftBarrier TRUE
@@ -228,4 +228,7 @@ Road {
   appearance Asphalt {
     colorOverride 0 1 0
   }
+  rightBorderBoundingObject TRUE
+  leftBorderBoundingObject TRUE
+}
 }
