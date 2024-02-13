@@ -12,10 +12,11 @@ EXTERNPROTO "../protos/SolidPipe3.proto"
 EXTERNPROTO "../protos/SolidPipe4.proto"
 EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/appearances/protos/Asphalt.proto"
 EXTERNPROTO "../protos/Road.proto"
-EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/floors/protos/Floor.proto"
 EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/obstacles/protos/Ramp30deg.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/traffic/protos/PedestrianCrossing.proto"
 
 WorldInfo {
+  basicTimeStep 20
 }
 Viewpoint {
   orientation -0.18329294537227994 0.04346153885371068 0.9820971391961294 2.661644415020583
@@ -69,6 +70,19 @@ RectangleArena {
   }
   wallThickness 0.5
   wallHeight 0.5
+}
+PedestrianCrossing {
+  translation -15.9785 22.5101 -0.19
+  rotation 0 0 1 1.5708
+  size 8 8
+  enableBoundingObject FALSE
+}
+PedestrianCrossing {
+  translation -43.7573 51.0985 -0.19
+  rotation 0 0 1 1.5708
+  name "pedestrian crossing(1)"
+  size 8 8
+  enableBoundingObject FALSE
 }
 RectangleArena {
   translation -60.5709 69.2032 -1.85
