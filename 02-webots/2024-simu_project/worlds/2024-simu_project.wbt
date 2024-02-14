@@ -19,6 +19,7 @@ EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/project
 EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/traffic/protos/HighwayPole.proto"
 EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/traffic/protos/HighwaySign.proto"
 EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/road/protos/RoadPillars.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/solids/protos/SolidBox.proto"
 
 WorldInfo {
   basicTimeStep 20
@@ -142,68 +143,68 @@ SolidPipe4 {
     metalness 0
   }
 }
-SolidRoundedBox {
+SolidBox {
   translation -14.8371 31.6911 2
   size 5 10 5
 }
-SolidRoundedBox {
+SolidBox {
   translation -34.8845 49.2527 2
   name "rounded box(8)"
   size 5 10 5
 }
-SolidRoundedBox {
+SolidBox {
   translation -42.0283 31.498 2
   rotation 0 0 1 1.56425
   name "rounded box(7)"
   size 5 10 5
 }
-SolidRoundedBox {
+SolidBox {
   translation -21.8989 46.2055 1
   rotation 0 0 -1 0.935933
   name "rounded box(6)"
   size 2 8 2
 }
-SolidRoundedBox {
+SolidBox {
   translation -31.6855 27.8511 1
   rotation 0 0 -1 0.00654517
   name "rounded box(9)"
   size 2 10 2
 }
-SolidRoundedBox {
+SolidBox {
   translation -25.3049 38.1055 1
   rotation 0 0 -1 0.00654517
   name "rounded box(10)"
   size 2 10 2
 }
-SolidRoundedBox {
+SolidBox {
   translation -36.8578 34.4436 1
   name "rounded box(2)"
 }
-SolidRoundedBox {
-  translation -33.087 38.1929 1
+SolidBox {
+  translation -32.239 38.6817 1
   name "rounded box(3)"
 }
-SolidRoundedBox {
-  translation -30.8325 38.5037 1
+SolidBox {
+  translation -30.3282 38.7538 1
   name "rounded box(13)"
 }
-SolidRoundedBox {
-  translation -27.3083 32.8202 1
+SolidBox {
+  translation -26.9499 34.0866 1
   name "rounded box(4)"
 }
-SolidRoundedBox {
+SolidBox {
   translation -23.1975 23.782 1
   name "rounded box(12)"
 }
-SolidRoundedBox {
-  translation -29.4659 32.0037 1
+SolidBox {
+  translation -29.7066 31.9385 1
   name "rounded box(11)"
 }
-SolidRoundedBox {
-  translation -34.8504 36.1671 1
+SolidBox {
+  translation -33.7563 38.7037 1
   name "rounded box(5)"
 }
-SolidRoundedBox {
+SolidBox {
   translation -20.0214 34.6029 1
   name "rounded box(1)"
 }
