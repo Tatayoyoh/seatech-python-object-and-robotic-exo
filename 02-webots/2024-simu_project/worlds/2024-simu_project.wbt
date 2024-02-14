@@ -45,12 +45,6 @@ RectangleArena {
   wallThickness 0.5
   wallHeight 0.5
 }
-Robot {
-  translation 5.11 0 0
-  name "race_supervisor"
-  controller "<extern>"
-  supervisor TRUE
-}
 Ramp30deg {
   translation -14.1511 19.1333 3.55271e-15
   rotation 0 0 1 1.8326
