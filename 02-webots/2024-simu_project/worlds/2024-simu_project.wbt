@@ -23,6 +23,8 @@ EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/project
 
 WorldInfo {
   basicTimeStep 20
+  defaultDamping Damping {
+  }
 }
 Viewpoint {
   orientation -0.16864890364588697 0.06796148773394411 0.9833304548746719 2.362679169893373
