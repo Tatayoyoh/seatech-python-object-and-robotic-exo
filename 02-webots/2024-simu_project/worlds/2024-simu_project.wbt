@@ -277,8 +277,3 @@ RubberDuck {
   name "rubber duck(2)"
   scale 18
 }
-RoadPillars {
-  translation -73.9608 75.7566 -1.5
-  rotation 0 0 1 -1.5707953071795862
-  height 6
-}
