@@ -1,50 +1,90 @@
-#VRML_SIM R2023a utf8
+#VRML_SIM R2023b utf8
 
-EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/backgrounds/protos/TexturedBackground.proto"
-EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
 EXTERNPROTO "../protos/CircleArena.proto"
-EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/appearances/protos/MattePaint.proto"
-EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/toys/protos/RubberDuck.proto"
-EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/solids/protos/SolidBox.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/appearances/protos/MattePaint.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/solids/protos/SolidBox.proto"
+IMPORTABLE EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/robots/rec/fabtino/protos/Fabtino.proto"
+IMPORTABLE EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/devices/sick/protos/SickS300.proto"
+IMPORTABLE EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/robots/robotis/turtlebot/protos/TurtleBot3Burger.proto"
+IMPORTABLE EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/devices/robotis/protos/RobotisLds01.proto"
+IMPORTABLE EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/devices/orbbec/protos/Astra.proto"
+IMPORTABLE EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/robots/husarion/rosbot/protos/Rosbot.proto"
+IMPORTABLE EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/robots/gctronic/e-puck/protos/E-puck.proto"
+IMPORTABLE EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/devices/hokuyo/protos/HokuyoUrg04lxug01.proto"
+IMPORTABLE EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/robots/robotnik/summit_xl_steel/protos/SummitXlSteel.proto"
+IMPORTABLE EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/robots/festo/robotino3/protos/Robotino3.proto"
+IMPORTABLE EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/animals/protos/Cow.proto"
+IMPORTABLE EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/drinks/protos/BeerBottle.proto"
+IMPORTABLE EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/samples/rendering/protos/Helmet.proto"
+IMPORTABLE EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/trees/protos/Cypress.proto"
+IMPORTABLE EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/bathroom/protos/WashingMachine.proto"
+IMPORTABLE EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/humans/pedestrian/protos/Pedestrian.proto"
+IMPORTABLE EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/robots/festo/robotino3/protos/Robotino3Platform.proto"
+IMPORTABLE EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/robots/irobot/create/protos/Create.proto"
+IMPORTABLE EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/robots/clearpath/pr2/protos/Pr2.proto"
+IMPORTABLE EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/robots/k-team/koala/protos/Koala.proto"
+IMPORTABLE EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/robots/mobsya/thymio/protos/Thymio2.proto"
+IMPORTABLE EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/robots/k-team/khepera3/protos/Khepera3.proto"
+IMPORTABLE EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/factory/containers/protos/PlasticFruitBox.proto"
+IMPORTABLE EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/animals/protos/Sheep.proto"
+IMPORTABLE EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/devices/slamtec/protos/RpLidarA2.proto"
+IMPORTABLE EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/balls/protos/SoccerBall.proto"
+IMPORTABLE EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/traffic/protos/TrafficCone.proto"
+IMPORTABLE EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/factory/forklift/protos/Forklift.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/toys/protos/RubberDuck.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/advertising_board/protos/AdvertisingBoard.proto"
 
 WorldInfo {
 }
 Viewpoint {
-  orientation 0.01242755012481483 -0.0037074090179300646 -0.9999159020218995 2.916557645394538
-  position 17.016297751802107 3.6660200191054813 3.484081332801078
+  orientation -0.197880149347536 -0.5921909013912543 0.7811231546968829 5.52924717713134
+  position -17.840746521371923 12.066688091123677 14.056286559143867
+}
+AdvertisingBoard {
+  translation 14.4956 -0.780511 1.77636e-15
+  frontTexture [
+    "../protos/trololo.jpg"
+  ]
+  backTexture [
+    "../protos/ssbm.png"
+  ]
+  displayWidth 6
+  displayHeight 5
 }
 TexturedBackground {
-  texture "noon_stormy_empty"
+  texture "noon_sunny_empty"
 }
 TexturedBackgroundLight {
   luminosity 1.5
 }
 RubberDuck {
-  translation 3.71726 3.73801 2.12832
-  rotation 0.019577156574886557 -0.006656030729151914 -0.9997861932410222 -0.7168146928204138
+  translation 3.7187597880271115 3.7339443125420853 2.1782917446159344
+  rotation 0.02397878557365671 0.0065508018081294585 0.9996910046799877 0.7167513746312782
   name "duck1"
   scale 7
 }
 RubberDuck {
-  translation -3.74462 -3.69422 2.12832
-  rotation 0.019577156574886557 -0.006656030729151914 -0.9997861932410222 2.2168146928204138
+  translation -3.7373075183923046 -3.6948164684926006 2.1782889746069927
+  rotation 0.005120888183976696 -0.008323566833155063 0.9999522462294792 -2.216588223538758
   name "duck3"
   scale 7
   bodyColor 0.878431 0.105882 0.141176
 }
 RubberDuck {
-  translation -3.72741 3.74949 2.12832
-  rotation -0.007930910549064418 0.018191301259400945 0.9998030692173095 2.40279
+  translation -3.726099043837146 3.7440126176532935 2.1804410647887416
+  rotation 0.006507732165901638 -0.0019532498839378173 0.9999769168520579 2.402746011400873
   name "duck4"
   scale 7
-  bodyColor 0.878431 0.105882 0.141176
+  bodyColor 0.380392 0.207843 0.513726
 }
 RubberDuck {
-  translation 3.73045 -3.69629 2.12832
-  rotation 0.019577156574886557 -0.006656030729151914 -0.9997861932410222 0.7831853071795862
+  translation 3.7300196468788753 -3.6961953473091897 2.178287632965254
+  rotation 0.020259601731075237 -0.010755066545178507 -0.9997369039308829 0.7832077522808241
   name "duck2"
   scale 7
-  bodyColor 0.180392 0.760784 0.494118
+  bodyColor 0.101961 0.372549 0.705882
 }
 CircleArena {
   name "defeat arena"
@@ -59,10 +99,15 @@ SolidBox {
   name "arena"
   size 8 8 0.1
   appearance PBRAppearance {
-    baseColor 0 0 0
+    baseColor 0 1 0
     baseColorMap ImageTexture {
     }
     roughness 0.5
     metalness 0
   }
+}
+Robot {
+  name "battle supervisor"
+  controller "battle_supervisor"
+  supervisor TRUE
 }
